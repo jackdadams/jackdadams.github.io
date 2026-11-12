@@ -9,24 +9,27 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <div class="wrap">
-    <nav aria-label="Main">
-      <a href="index.html"><strong>Jack Adams</strong></a>
-      <div><a href="#projects">Projects</a><a href="https://github.com/jackdadams">GitHub</a><a href="https://www.linkedin.com/in/jackdadams/">LinkedIn</a></div>
+  <aside class="sidebar">
+    <a class="brand" href="index.html">Jack Adams</a>
+    <nav aria-label="Projects">
+      <a class="nav-heading" href="index.html#projects">Projects</a>
+      <div class="nav-links"><a href="boost-converter.html">Boost converter</a><a href="stm32-remote.html">STM32 remote</a><a href="shutdown-circuits.html">Shutdown circuits</a><a href="wave-energy.html">Wave energy</a><a href="weather-station.html">Weather station</a><a href="tesla-coil.html">Tesla coil</a><a href="shed-and-patio.html">Shed &amp; patio</a></div>
     </nav>
+  </aside>
+  <div class="wrap">
     <main id="main">
     <header class="hero">
       <div>
         <p class="kicker">Electrical Engineering · Auburn University</p>
         <h1>Jack Adams</h1>
-        <p class="lede">I design PCBs, work on power electronics for Auburn’s Formula SAE team, and do bench testing in the Auburn Power Lab. My personal projects include a two-board STM32 RF remote.</p>
-        <a class="button" href="#projects">View projects</a>
+        <p class="lede">I design PCBs for power electronics and RF projects, and do bench testing in the Auburn Power Lab.</p>
+        <div class="profile-links"><a href="https://github.com/jackdadams">GitHub</a><a href="https://www.linkedin.com/in/jackdadams/">LinkedIn</a></div>
       </div>
       <figure><img src="assets/boost-render.webp" alt="Formula SAE boost converter · Altium PCB render"><figcaption>Formula SAE boost converter · Altium PCB render</figcaption></figure>
     </header>
     <section class="section" id="projects">
       <h2>Projects</h2>
-      <div class="grid"><a class="card" href="boost-converter.html"><span class="status">War Eagle Motorsports · Power electronics</span><h3>Formula SAE Boost Converter <span aria-hidden="true">↗</span></h3><p>Designed a synchronous boost converter to supply 24 V to the vehicle’s pumps and control electronics.</p></a><a class="card" href="stm32-remote.html"><span class="status">Individual project · PCB and RF design</span><h3>STM32 Handheld RF Remote <span aria-hidden="true">↗</span></h3><p>Designed the schematics and routed two custom boards in KiCad for a handheld remote with 2.4 GHz RF and infrared.</p></a><a class="card" href="shutdown-circuits.html"><span class="status">War Eagle Motorsports · Analog and digital circuits</span><h3>Formula SAE Shutdown Circuits <span aria-hidden="true">↗</span></h3><p>Designed the Brake System Plausibility Device (BSPD) circuitry and relay interfaces for the vehicle shutdown loop.</p></a><a class="card" href="wave-energy.html"><span class="status">Auburn University Power Lab · Undergraduate research</span><h3>Wave Energy Research <span aria-hidden="true">↗</span></h3><p>I work with Dr. Eduard Muljadi’s group on converting fluctuating generator output from an oscillating water column into steady power.</p></a><a class="card" href="weather-station.html"><span class="status">Individual project · Environmental sensing</span><h3>Remote Weather Station <span aria-hidden="true">↗</span></h3><p>Built a Raspberry Pi weather station for my grandparents’ property in remote Canada.</p></a><a class="card" href="tesla-coil.html"><span class="status">Individual project · Resonant circuits</span><h3>Tesla Coil <span aria-hidden="true">↗</span></h3><p>Built and bench-tested a Tesla coil as an independent high-voltage electronics project.</p></a><a class="card" href="shed-and-patio.html"><span class="status">Individual project · Design and fabrication</span><h3>Shed and Patio <span aria-hidden="true">↗</span></h3><p>Planned and built a backyard shed and paver patio from the ground up.</p></a></div>
+      <div class="grid"><a class="card" href="boost-converter.html"><img src="assets/boost-render.webp" alt="3D render of the boost converter PCB" loading="lazy"><div class="card-copy"><h3>Formula SAE Boost Converter <span aria-hidden="true">↗</span></h3><p>Designed a synchronous boost converter to supply 24 V to the vehicle’s pumps and control electronics.</p></div></a><a class="card" href="stm32-remote.html"><div class="card-copy"><h3>STM32 Handheld RF Remote <span aria-hidden="true">↗</span></h3><p>Designed the schematics and routed two custom boards in KiCad for a handheld remote with 2.4 GHz RF and infrared.</p></div></a><a class="card" href="shutdown-circuits.html"><div class="card-copy"><h3>Formula SAE Shutdown Circuits <span aria-hidden="true">↗</span></h3><p>Designed the Brake System Plausibility Device (BSPD) circuitry and relay interfaces for the vehicle shutdown loop.</p></div></a><a class="card" href="wave-energy.html"><div class="card-copy"><h3>Wave Energy Research <span aria-hidden="true">↗</span></h3><p>I work with Dr. Eduard Muljadi’s group on converting fluctuating generator output from an oscillating water column into steady power.</p></div></a><a class="card" href="weather-station.html"><img src="assets/weather-station.webp" alt="Raspberry Pi and breadboarded sensor interface" loading="lazy"><div class="card-copy"><h3>Remote Weather Station <span aria-hidden="true">↗</span></h3><p>Built a Raspberry Pi weather station for my grandparents’ property in remote Canada.</p></div></a><a class="card" href="tesla-coil.html"><img src="assets/tesla-coil.webp" alt="Tesla coil during operation" loading="lazy"><div class="card-copy"><h3>Tesla Coil <span aria-hidden="true">↗</span></h3><p>Built and bench-tested a Tesla coil as an independent high-voltage electronics project.</p></div></a><a class="card" href="shed-and-patio.html"><img src="assets/shed-complete.webp" alt="Completed shed and patio" loading="lazy"><div class="card-copy"><h3>Shed and Patio <span aria-hidden="true">↗</span></h3><p>Planned and built a backyard shed and paver patio from the ground up.</p></div></a></div>
     </section>
     <section class="section" id="education">
       <h2>Education</h2>
