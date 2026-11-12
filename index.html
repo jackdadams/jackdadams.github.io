@@ -3,48 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jack Adams | Hardware Portfolio</title>
-  <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; background: #f5f4f0; color: #10253e; font: 16px/1.6 system-ui, sans-serif; }
-    main { width: min(960px, 92%); margin: auto; padding: 64px 0; }
-    header { border-top: 4px solid #c34b12; padding: 24px 0 40px; }
-    h1 { font-size: clamp(3rem, 8vw, 5rem); line-height: 1; margin: 0 0 16px; }
-    header p { max-width: 520px; }
-    a { color: #8e340d; }
-    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 16px; }
-    article { background: white; border: 1px solid #d9dfe6; border-radius: 12px; padding: 20px; }
-    h3 { margin-top: 0; line-height: 1.25; }
-    small { color: #495a6b; }
-  </style>
+  <meta name="description" content="Jack Adams, Auburn electrical engineering student. PCB design, Formula SAE power electronics and RF projects.">
+  <title>Engineering Portfolio | Jack Adams</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1>Jack Adams</h1>
-      <p>Electrical engineering student at Auburn University. I design PCBs and work on power electronics, RF hardware, and bench testing.</p>
-      <a href="https://github.com/TrailTree">GitHub</a> ·
-      <a href="https://linkedin.com/in/jackdadams/">LinkedIn</a>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a href="index.html"><strong>Jack Adams</strong></a>
+      <div><a href="#projects">Projects</a><a href="https://github.com/jackdadams">GitHub</a><a href="https://www.linkedin.com/in/jackdadams/">LinkedIn</a></div>
+    </nav>
+    <main id="main">
+    <header class="hero">
+      <div>
+        <p class="kicker">Electrical Engineering · Auburn University</p>
+        <h1>Jack Adams</h1>
+        <p class="lede">I design PCBs, work on power electronics for Auburn’s Formula SAE team, and do bench testing in the Auburn Power Lab. My personal projects include a two-board STM32 RF remote.</p>
+        <a class="button" href="#projects">View projects</a>
+      </div>
+      <figure><img src="assets/boost-render.webp" alt="Formula SAE boost converter · Altium PCB render"><figcaption>Formula SAE boost converter · Altium PCB render</figcaption></figure>
     </header>
-
-    <h2>Featured Projects</h2>
-    <div class="projects">
-      <article>
-        <h3>Formula SAE Boost Converter</h3>
-        <p>Designed and routed a 12 V to 24 V converter in Altium for vehicle pumps and control electronics. The design targets up to 7 A.</p>
-        <small>Released for fabrication</small>
-      </article>
-      <article>
-        <h3>STM32 Handheld RF Remote</h3>
-        <p>Drew the schematics and routed two boards in KiCad, including a four-layer main board with 2.4 GHz RF and USB-C charging.</p>
-        <small>PCB design complete</small>
-      </article>
-      <article>
-        <h3>Formula SAE Shutdown Circuits</h3>
-        <p>Designed comparator and RC timing circuitry for the BSPD, plus a flip-flop latch and relay interface for the shutdown loop.</p>
-        <small>Circuit design complete</small>
-      </article>
-    </div>
-  </main>
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="grid"><a class="card" href="boost-converter.html"><span class="status">War Eagle Motorsports · Power electronics</span><h3>Formula SAE Boost Converter <span aria-hidden="true">↗</span></h3><p>Designed a synchronous boost converter to supply 24 V to the vehicle’s pumps and control electronics.</p></a><a class="card" href="stm32-remote.html"><span class="status">Individual project · PCB and RF design</span><h3>STM32 Handheld RF Remote <span aria-hidden="true">↗</span></h3><p>Designed the schematics and routed two custom boards in KiCad for a handheld remote with 2.4 GHz RF and infrared.</p></a><a class="card" href="shutdown-circuits.html"><span class="status">War Eagle Motorsports · Analog and digital circuits</span><h3>Formula SAE Shutdown Circuits <span aria-hidden="true">↗</span></h3><p>Designed the Brake System Plausibility Device (BSPD) circuitry and relay interfaces for the vehicle shutdown loop.</p></a><a class="card" href="wave-energy.html"><span class="status">Auburn University Power Lab · Undergraduate research</span><h3>Wave Energy Research <span aria-hidden="true">↗</span></h3><p>I work with Dr. Eduard Muljadi’s group on converting fluctuating generator output from an oscillating water column into steady power.</p></a><a class="card" href="weather-station.html"><span class="status">Individual project · Environmental sensing</span><h3>Remote Weather Station <span aria-hidden="true">↗</span></h3><p>Built a Raspberry Pi weather station for my grandparents’ property in remote Canada.</p></a><a class="card" href="tesla-coil.html"><span class="status">Individual project · Resonant circuits</span><h3>Tesla Coil <span aria-hidden="true">↗</span></h3><p>Built and bench-tested a Tesla coil as an independent high-voltage electronics project.</p></a><a class="card" href="shed-and-patio.html"><span class="status">Individual project · Design and fabrication</span><h3>Shed and Patio <span aria-hidden="true">↗</span></h3><p>Planned and built a backyard shed and paver patio from the ground up.</p></a></div>
+    </section>
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <h3>Auburn University</h3>
+      <p>Bachelor of Electrical Engineering, Minor in Business · Expected May 2029</p>
+      <p>3.91 GPA · Dean’s List, Fall 2025 and Spring 2026</p>
+    </section>
+</main>
+    <footer><span>Jack Adams · Auburn University</span><div><a href="mailto:jda0088@auburn.edu">Email</a><a href="https://www.linkedin.com/in/jackdadams/">LinkedIn</a></div></footer>
+  </div>
 </body>
 </html>
