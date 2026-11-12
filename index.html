@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jack Adams | Hardware Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f4f0; color: #10253e; font: 16px/1.6 system-ui, sans-serif; }
+    main { width: min(960px, 92%); margin: auto; padding: 64px 0; }
+    header { border-top: 4px solid #c34b12; padding: 24px 0 40px; }
+    h1 { font-size: clamp(3rem, 8vw, 5rem); line-height: 1; margin: 0 0 16px; }
+    header p { max-width: 520px; }
+    a { color: #8e340d; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 16px; }
+    article { background: white; border: 1px solid #d9dfe6; border-radius: 12px; padding: 20px; }
+    h3 { margin-top: 0; line-height: 1.25; }
+    small { color: #495a6b; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Jack Adams</h1>
+      <p>Electrical engineering student at Auburn University. I design PCBs and work on power electronics, RF hardware, and bench testing.</p>
+      <a href="https://github.com/TrailTree">GitHub</a> ·
+      <a href="https://linkedin.com/in/jackdadams/">LinkedIn</a>
+    </header>
+
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <article>
+        <h3>Formula SAE Boost Converter</h3>
+        <p>Designed and routed a 12 V to 24 V converter in Altium for vehicle pumps and control electronics. The design targets up to 7 A.</p>
+        <small>Released for fabrication</small>
+      </article>
+      <article>
+        <h3>STM32 Handheld RF Remote</h3>
+        <p>Drew the schematics and routed two boards in KiCad, including a four-layer main board with 2.4 GHz RF and USB-C charging.</p>
+        <small>PCB design complete</small>
+      </article>
+      <article>
+        <h3>Formula SAE Shutdown Circuits</h3>
+        <p>Designed comparator and RC timing circuitry for the BSPD, plus a flip-flop latch and relay interface for the shutdown loop.</p>
+        <small>Circuit design complete</small>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
